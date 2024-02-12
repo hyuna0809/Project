@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+
+.product_upload {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}

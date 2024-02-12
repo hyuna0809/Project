@@ -1,0 +1,75 @@
+body {
+    padding-left: 30em;
+    padding-top: 6em;
+    background: #F5F5F5;
+}
+
+table {
+    border: 1px #a39485 solid;
+    font-size: .9em;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+    width: 70%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    color: black;
+}
+
+th {
+    text-align: left;
+}
+
+thead {
+    font-weight: bold;
+    color: #fff;
+    background: #73685d;
+}
+
+td, th {
+    padding: 1em .5em;
+    vertical-align: middle;
+}
+
+td {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    background: #fff;
+}
+
+#num {
+    font-size: 15px;
+    padding-left: 25em;
+    padding-top: 2em;
+    font-weight: bold;
+}
+
+#num a {
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 1px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#write {
+    padding-left: 57em;
+    margin-top: 20px; /* 위쪽 여백 추가 */
+}
+
+#write button {
+    padding: 8px 12px; /* 버튼의 패딩 조절 */
+    font-size: 14px; /* 버튼의 글자 크기 조절 */
+    background-color: #34495e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+    cursor: pointer;
+}
+
+#write button:hover {
+    background-color: #333333;
+}
+

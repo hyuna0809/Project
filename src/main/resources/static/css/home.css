@@ -1,0 +1,113 @@
+/*꾸미기*/
+body {
+    height: 100vh;
+    background: #333 url('https://image.ibb.co/n5A2HU/showcase.jpg') no-repeat center center / cover;
+    color: #ccc;
+    overflow:hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+.container .h1, h2 {
+    font-weight: 200;
+    margin: 0.4rem;
+}
+
+.container .h1 {
+    font-size: 3.5rem;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #aaa;
+    margin-left: 12px;
+}
+
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid #777;
+}
+
+@media(min-width: 1200px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/*검색*/
+.search {
+    width: 500px;
+    height: 40px;
+    margin: 150px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius:  3px;
+    border: 1px solid #fff;
+    margin-left: 650px;
+    margin-top: 30px;
+
+    input {
+        width: 370px;
+        padding: 10px 5px;
+        float: left;
+        color: #ccc;
+        border: 0;
+        background: transparent;
+        border-radius: 3px 0 0 3px;
+        &:focus {
+            outline: 0;
+            background:transparent;
+        }
+    }
+
+    button {
+        position: relative;
+        float: right;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 40px;
+        width: 120px;
+        color: #fff;
+        background: transparent;
+        border-left: 1px solid #fff;
+        border-radius: 0 3px 3px 0;
+        &:hover {
+            background: #fff;
+            color:#444;
+        }
+        &:active {
+            box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+/*검색 마무리*/

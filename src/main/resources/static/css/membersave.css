@@ -1,0 +1,173 @@
+/*네비바*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+
+    height: 100vh;
+    color: #ccc;
+    overflow:hidden;
+}
+header {
+    z-index: 99;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2,
+h3,
+a {
+    color: #34495e;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+.main-nav {
+    margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+.main-nav a {
+    color: #34495e;
+    font-size: .99em;
+}
+
+.main-nav a:hover {
+    color: #718daa;
+}
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #a2a2a2;
+    background-color: #f4f4f4;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 769px) {
+    .header,
+    .main-nav {
+        display: flex;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        .header{
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1150px;
+        }
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+/*네비바 마무리*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body{
+    background: #333 url('https://image.ibb.co/n5A2HU/showcase.jpg') no-repeat center center / cover;
+}
+
+.save-wrapper{
+    width: 400px;
+    height: 425px;
+    padding: 40px;
+    box-sizing: border-box;
+
+    position: relative;
+    left: 750px;
+    top: 300px;
+
+    background-color: rgba(220, 220, 220, 0.5);
+    border-radius: 6px;
+}
+
+.save-wrapper > h2{
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#save-form > input{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+}
+#save-form > input::placeholder{
+    color: #4f4e4e;
+}
+#save-form > input[type="submit"]{
+    color: #fff;
+    font-size: 16px;
+    background-color: black;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/*#save-form > input[type="checkbox"]{
+    display: none;
+}
+#login-form > label{
+    color: #999999;
+}*/
+/*
+#login-form input[type="checkbox"] + label{
+    cursor: pointer;
+    padding-left: 26px;
+    !*background-image: url("checkbox.png");*!
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#login-form input[type="checkbox"]:checked + label{
+    !*background-image: url("checkbox-active.png");*!
+    background-repeat: no-repeat;
+    background-size: contain;
+}*/
